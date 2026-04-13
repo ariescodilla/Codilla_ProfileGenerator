@@ -62,7 +62,6 @@
     </button>
 </form>
 
-{{-- Display Profiles --}}
 <div class="grid md:grid-cols-2 gap-4">
 @foreach($profiles as $profile)
 
