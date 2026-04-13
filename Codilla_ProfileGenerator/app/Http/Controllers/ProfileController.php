@@ -25,7 +25,16 @@ class ProfileController extends Controller
         ]);
 
         $profiles = session()->get('profiles', []);
-        $profiles[] = $request->all();
+
+        $profiles[] = $request->only([
+            'name',
+            'age',
+            'program',
+            'email',
+            'gender',
+            'hobbies',
+            'bio'
+        ]);
 
         session()->put('profiles', $profiles);
 
