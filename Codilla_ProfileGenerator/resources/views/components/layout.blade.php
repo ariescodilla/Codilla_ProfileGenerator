@@ -5,7 +5,7 @@
     <title>Profile Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-600 min-h-screen text-white">
