@@ -32,7 +32,6 @@ class ProfileController extends Controller
         return redirect()->route('profiles.index');
     }
 
-    // Clear all profiles
     public function clear()
     {
         session()->forget('profiles');
